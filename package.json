@@ -1,0 +1,46 @@
+{
+	"author": {
+		"name": "Baptiste Pillot",
+		"email": "baptiste@pillot.fr"
+	},
+	"dependencies": {
+		"@itrocks/class-type": "latest",
+		"@itrocks/decorator": "latest"
+	},
+	"description": "Group class properties by business topic with a shared class and property decorator",
+	"devDependencies": {
+		"typescript": "^7.0"
+	},
+	"engines": {
+		"node": ">=24"
+	},
+	"exports": "./cjs/property-group.js",
+	"files": [
+		"LICENSE",
+		"README.md",
+		"cjs",
+		"!*.map"
+	],
+	"homepage": "https://it.rocks",
+	"keywords": [
+		"business",
+		"class",
+		"decorator",
+		"group",
+		"it.rocks",
+		"metadata",
+		"property",
+		"typescript"
+	],
+	"license": "ISC",
+	"name": "@itrocks/property-group",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/itrocks-ts/property-group.git"
+	},
+	"scripts": {
+		"build": "tsc",
+		"test": "npm run build && tsc -p test/tsconfig.json && node --test --test-isolation=none test/*.test.js"
+	},
+	"version": "0.0.1"
+}
